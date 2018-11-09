@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Grocery Items</title>
+  </head>
+  <body>
+    <a href="/shopping-list">Add Stores </a>
+    <a href="/add-grocery">Add Groceries</a>
+
+    <h2> Add Your Grocery List </h2>
+    <form action="/add-grocery" method="POST">
+        {{#store}}
+          {{storeName}}
+          {{storeLocation}}
+        {{/store}}
+      <input type="text" name="item" placeholder="Enter Grocery Item..." />
+      <input type="submit" value="Submit" />
+    </form>
+
+
+  </body>
+</html>

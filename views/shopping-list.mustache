@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grocery Stores</title>
+  </head>
+  <body>
+    <a href="/shopping-list">Add Stores </a>
+    <a href="/add-grocery">Add Groceries</a>
+    
+    <h1> Welcome to the Grocery Store App </h1>
+
+    <form action="/add-storeinfo" method="post">
+      <select name="storeName" required>
+        <option value="0">Select a Store </option>
+        <option value="Walmart">Walmart</option>
+        <option value="HEB">HEB</option>
+        <option value="Kroger">Kroger</option>
+        <option value="Target">Target</option>
+        <option value="Randall's">Randall's</option>
+      </select>
+      <input type="text" name="storeLocation" placeholder="Enter Store Location...."/>
+      <input type="submit" value="Submit" />
+    </form>
+
+  </body>
+</html>
